@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bafrotiz Çekiliş Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.jpg" type="image/jpg">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>HOŞGELDİNİZ</h1>
+    <div class="container">
+        <h1>Çekiliş Listesi</h1>
+        <p id="sayac">Toplam Kişi: 0</p>
+        <textarea id="isimler" oninput="sayiGuncelle()" placeholder="Her satıra bir isim yazın..."></textarea>
+        <br>
+        <button onclick="cekilisYap()">Çekilişi Başlat</button>
+        <h2 id="kazanan"></h2>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
